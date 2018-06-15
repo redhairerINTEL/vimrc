@@ -11,6 +11,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Tagbar'
+Plugin 'netrw.vim'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
 Plugin 'jremmen/vim-ripgrep'
@@ -39,6 +40,7 @@ nmap - <C-W>-
 nmap <Right> <C-W>>
 nmap <Left> <C-W><
 nmap <Space>f :Files<CR>
+nmap <Space>/ :Rg
 
 colorscheme desert 
 syntax on
