@@ -15,6 +15,11 @@ Plugin 'netrw.vim'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
 Plugin 'jremmen/vim-ripgrep'
+Plugin 'tpope/vim-fugitive'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -41,6 +46,10 @@ nmap <Right> <C-W>>
 nmap <Left> <C-W><
 nmap <Space>f :Files<CR>
 nmap <Space>/ :Rg
+
+" execute a command and show its output in a split window
+command! -nargs=* -complete=shellcmd Rsplit execute "new | r! <args>"
+command! OpenBrowser :silent ! start chrome "file://%:p"
 
 colorscheme desert 
 syntax on
