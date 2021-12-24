@@ -72,7 +72,8 @@ set tabstop=2
 set softtabstop=2
 " when indenting with '>', use 2 spaces width
 set shiftwidth=2
-
+set list
+let &pythonthreedll = 'C:\Python36\python36.dll'
 
 
 set tags+=tags,c:\Users\redhaire\Documents\BKC\Whitley\tags,c:\Users\redhaire\Perforce\redhaire_redhaire-MOBL_Skylake_Trunk\tags,c:\Users\redhaire\Perforce\redhaire_redhaire-MOBL_GrantleyRefresh_Trunk\tags
