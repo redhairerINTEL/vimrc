@@ -1,4 +1,4 @@
-
+set encoding=utf-8
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -49,7 +49,6 @@ nmap <Space>/ :Rg
 
 " execute a command and show its output in a split window
 command! -nargs=* -complete=shellcmd Rsplit execute "new | r! <args>"
-command! OpenBrowser :silent ! start chrome "file://%:p"
 
 colorscheme desert 
 syntax on
@@ -73,7 +72,8 @@ set softtabstop=2
 " when indenting with '>', use 2 spaces width
 set shiftwidth=2
 set list
-let &pythonthreedll = 'C:\Python36\python36.dll'
+let &pythonthreedll = 'C:\Python38\python38.dll'
 
 
-set tags+=tags,c:\Users\redhaire\Documents\BKC\Whitley\tags,c:\Users\redhaire\Perforce\redhaire_redhaire-MOBL_Skylake_Trunk\tags,c:\Users\redhaire\Perforce\redhaire_redhaire-MOBL_GrantleyRefresh_Trunk\tags
+set tags+=tags,C:\git\ndctl\tags,C:\git\DCG10nm\tags,C:\git\ServerGen2\tags,C:\git\nvdimm-n\tags,C:\git\DCG10nm\tags
+
