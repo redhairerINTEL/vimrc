@@ -37,7 +37,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
-nmap <F6> :%! xxd<CR>
+nmap <F6> :%! xxd -e<CR>
 nmap <F7> :%! xxd -r<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap + <C-W>+
