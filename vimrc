@@ -56,6 +56,7 @@ syntax on
 let g:netrw_liststyle=3
 let g:netrw_altv=1
 let g:netrw_alto=1
+let g:copilot_proxy = 'http://proxy-dmz.intel.com:912'
 
 set nu
 set tabstop=2
@@ -75,5 +76,5 @@ set list
 let &pythonthreedll = 'C:\Python38\python38.dll'
 
 
-set tags+=tags,C:\git\ndctl\tags,C:\git\DCG10nm\tags,C:\git\ServerGen2\tags,C:\git\nvdimm-n\tags,C:\git\DCG10nm\tags
+set tags+=tags,C:\git\ndctl\tags,C:\git\ServerGen3\tags,c:\git\github\intel-sandbox\personal.redhairer.ai-think-tank\AiTT\tags
 
